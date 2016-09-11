@@ -11,13 +11,13 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-  <link rel="shortcut icon" href="rock-logo.png" type="image/png"/>
-  <link rel="icon" href="rock-logo.png" type="image/png"/>
+  <link rel="shortcut icon" href="notarocklogo.png" type="image/png"/>
+  <link rel="icon" href="notarocklogo.png" type="image/png"/>
 </head>
 <body id="home">
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="rock-logo.png" style="width:60px; height:60px"/></a>
+      <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="notarocklogo.png" style="width:60px; height:60px"/></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#" id='home_btn'>Home</a></li>
         <li><a href="#" id='locations_btn'>Locations</a></li>
@@ -42,7 +42,7 @@
       <div class="container">
         <br><br>
         <!-- <h1 class="header center how-many-rocks-text text-lighten-2" style="display:inline-block">How many rocks are there<span id="num_rocks_counter"></span></h1> -->
-        <img class="responsive-img" src="wordmark.png" />
+        <img class="responsive-img" src="wordmark.png" style="margin-top: 40px !important"/>
 
         <!-- Counter -->
         <div class="row center">
@@ -151,7 +151,7 @@
         <div class="col s12 center" id="most_popular">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Testimonials</h4>
-          <p class="light">You know this is interesting, but we'll let real users tell you what they think.</p>
+          <p class="light">Let real users tell you what they think.</p>
         </div>
       </div>
 
@@ -423,7 +423,7 @@
             position: new google.maps.LatLng(rocks[i]['lat'], rocks[i]['lng']),
             map: map,
             title: String(i),
-            icon: 'small_rock.png'
+            icon: 'notarockdroppin.png'
           });
 
           all_markers.push(marker);
