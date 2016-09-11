@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>How Many Rocks</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link rel="shortcut icon" href="rock-logo.png" type="image/png"/>
+  <link rel="icon" href="rock-logo.png" type="image/png"/>
+</head>
+<body id="home">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="rock-logo.png" style="width:60px; height:60px"/></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" id='home_btn'>Home</a></li>
+        <li><a href="#" id='locations_btn'>Locations</a></li>
+        <li><a href="#" id='most_popular_btn'>Latest Rocks</a></li>
+        <li><a href="#" id='testimonials_btn'>Testimonials</a></li>
+        <!-- <li><a href="#" id='reach_out_btn'>Reach Out</a></li> -->
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#" id='home_btn'>Home</a></li>
+        <li><a href="#" id='locations_btn'>Locations</a></li>
+        <li><a href="#" id='most_popular_btn'>Latest Rocks</a></li>
+        <li><a href="#" id='testimonials_btn'>Testimonials</a></li>
+        <!-- <li><a href="#" id='reach_out_btn'>Reach Out</a></li> -->
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container cover-background">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <!-- <h1 class="header center how-many-rocks-text text-lighten-2" style="display:inline-block">How many rocks are there<span id="num_rocks_counter"></span></h1> -->
+        <img class="responsive-img" src="wordmark.png" />
+
+        <!-- Counter -->
+        <div class="row center">
+          <div class="col s12 m12 l12">
+            <div class="counter" id="example12">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+            <div class="counter" id="example11">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+            <div class="counter" id="example10">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+            <div class="counter" id="example9">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+            <div class="counter" id="example8">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+            <div class="counter" id="example7">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+            <div class="counter" id="example6">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+            <div class="counter" id="example5">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+            <div class="counter" id="example4">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+            <div class="counter" id="example3">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+            <div class="counter" id="example2">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+            <div class="counter" id="example1">
+              <div class="bg"></div>
+              <img src="digit-small.png"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="row center">
+          <h5 class="header col s12 light">A massive multiplayer mobile experience designed to figure out how many rocks there are, and where are they.</h5>
+        </div>
+        <div class="row center">
+          <a  id="what_weve_found_btn" class="btn-large waves-effect waves-light how-many-rocks-color lighten-1">See what we've found</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="rocks-home-page.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <!-- Google map -->
+  <div id="map_canvas" style="height: 450px; width: 100%;"></div>
+
+
+  <!-- Most Popular Posts --> 
+  <div class="container" id="most_popular">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center" id="most_popular_content">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Latest Rocks</h4>
+          <p class="light" style="margin-bottom: 0px !important">These are the most recent rocks discovered in the world.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">It's great for fitness and the more people participate, the more fun it gets.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="rocks-image-2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="container" id="testimonials">
+    <div class="section">
+
+      <!-- Title of Section -->
+      <div class="row">
+        <div class="col s12 center" id="most_popular">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Testimonials</h4>
+          <p class="light">You know this is interesting, but we'll let real users tell you what they think.</p>
+        </div>
+      </div>
+
+
+      <div class="row">
+
+      <!-- Testimonial 1 -->
+        <div class="col s12 m6 l6">
+          <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="row valign-wrapper" style="margin-bottom: 0px !important">
+              <div class="col s3">
+                <img src="mavina.jpeg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </div>
+              <div class="col s9">
+                <span class="black-text">
+                  "This is an app that counts rocks." <p class="quote-person right-align">- Mavina Lim</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col s12 m6 l6">
+          <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="row valign-wrapper" style="margin-bottom: 0px !important">
+              <div class="col s3">
+                <img src="jimmy.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </div>
+              <div class="col s9">
+                <span class="black-text">
+                  "I uploaded a picture of a rock." <p class="quote-person right-align">- Jimmy Jacobson</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Get out there and help us count the rocks!</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="rocks-image-3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer how-many-rocks-color" id="reach_out">
+    <!-- <div class="container"> -->
+      <!-- <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div> -->
+    <!-- </div> -->
+    <div class="footer-copyright">
+      <div class="container">
+      Created at Comedy Hack Day 11 by <a href="http://hiphopgoldenage.com/wp-content/uploads/2015/07/BBimage1.jpg" class="brown-text text-lighten-3">The Geodudes</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Structure -->
+  <div id="google_maps_rock" class="modal">
+    <!-- <div class="modal-content" id ="modal_content">
+    </div> -->
+    <!-- <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div> -->
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGoDuHe3vrF1_mJAoRi4-n-3KjDFmPkek&sensor=false"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/spinCounter.js"></script>
+  <!-- <script src="js/countUp.js"></script> -->
+  <script type="text/javascript">
+    /* This is for the full screen video background */
+    $(document).ready(function () {
+
+      total_number_rocks = rocks.length;
+
+      spin6 = ~~(total_number_rocks/Math.pow(10,5))- ~~(total_number_rocks/Math.pow(10,5+1))*10;
+      spin5 = ~~(total_number_rocks/Math.pow(10,4))- ~~(total_number_rocks/Math.pow(10,4+1))*10;
+      spin4 = ~~(total_number_rocks/Math.pow(10,3))- ~~(total_number_rocks/Math.pow(10,3+1))*10;
+      spin3 = ~~(total_number_rocks/Math.pow(10,2))- ~~(total_number_rocks/Math.pow(10,2+1))*10;
+      spin2 = ~~(total_number_rocks/Math.pow(10,1))- ~~(total_number_rocks/Math.pow(10,1+1))*10;
+      spin1 = ~~(total_number_rocks/Math.pow(10,0))- ~~(total_number_rocks/Math.pow(10,0+1))*10;
+
+      // spinCounter config
+      $('#example12').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: 0,
+        startDigit:8
+      });
+      $('#example11').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: 0,
+        startDigit:2
+      });
+      $('#example10').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: 0,
+        startDigit:1
+      });
+      $('#example9').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: 0,
+        startDigit:5
+      });
+      $('#example8').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: 0,
+        startDigit:4
+      });
+      $('#example7').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: 0,
+        startDigit:7
+      });
+      $('#example6').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: spin6,
+        startDigit:2
+      });
+      $('#example5').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: spin5,
+        startDigit:1
+      });
+      $('#example4').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: spin4,
+        startDigit:5
+      });
+      $('#example3').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: spin3,
+        startDigit:8
+      });
+      $('#example2').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: spin2,
+        startDigit:3
+      });
+      $('#example1').spinCounter({
+        minDigitSpinDelay: 100,
+        maxDigitSpinDelay: 1000,
+        spinTime: 2000,
+        stopDigit: spin1,
+        startDigit:2
+      });
+
+
+      // Scroll Code
+      $("#home_btn").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#home").offset().top},
+            'slow');
+      });
+      $("#locations_btn").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#map_canvas").offset().top},
+            'slow');
+      });
+      $("#what_weve_found_btn").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#map_canvas").offset().top},
+            'slow');
+      });
+      $("#most_popular_btn").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#most_popular").offset().top},
+            'slow');
+      });
+      $("#testimonials_btn").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#testimonials").offset().top},
+            'slow');
+      });
+      $("#reach_out_btn").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#reach_out").offset().top},
+            'slow');
+      });
+
+
+      // CountUp code
+      // var options = {
+      //   useEasing : true, 
+      //   useGrouping : true, 
+      //   separator : ',', 
+      //   decimal : '.', 
+      //   prefix : '', 
+      //   suffix : '' 
+      // };
+      // var num_rocks = new CountUp("num_rocks_counter", 0, 3113, 0, 2.5, options);
+      // num_rocks.start();
+
+      all_markers = [];
+
+      function initialize() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(40.742856, -73.989949),
+          zoom: 14,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        
+
+        for (var i = 0; i < rocks.length; i++) {
+
+          var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(rocks[i]['lat'], rocks[i]['lng']),
+            map: map,
+            title: String(i),
+            icon: 'small_rock.png'
+          });
+
+          all_markers.push(marker);
+        }
+
+        for (var i = 0; i < all_markers.length; i++) {
+
+          all_markers[i].addListener('click', function() {
+            profile_modal(parseInt(this.getTitle()), rocks);
+          });
+
+        }
+
+        // Create new markers based on API response
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+
+      // Populating the Latest Rocks Section - Limit 10
+      render_most_popular_rocks(rocks);
+
+      // initialize carousel for latest rocks
+      $(document).ready(function(){
+        $('.carousel').carousel({});
+      });
+    });
+
+  </script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+
+
+  </body>
+</html>

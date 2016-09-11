@@ -1,0 +1,80 @@
+/*
+Custom styles for how-many-rocks
+*/
+
+.popular-rocks > tbody > tr {
+	line-height: 1.1 !important;
+	font-size: 80%;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.discovered-by {
+	font-size: 40%;
+	line-height: 0.2 !important;
+}
+
+.quote-person {
+	font-weight: bold;
+	font-style: italic;
+}
+
+html {
+	font-family: "Courier", sans-serif !important;
+}
+.cover-background {
+	height: 100% !important;
+}
+
+.how-many-rocks-color {
+	background-color: #44E670 !important;
+}
+
+.how-many-rocks-text {
+	color: #44E670;
+}
+
+.counter {
+    width: 36px;
+    height: 48px;
+    overflow: hidden;
+    background-color: white;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.counter .bg {
+    /*background: url('../bg.png') no-repeat;*/
+    width: 36px;
+    height: 48px;
+    position: absolute;
+    z-index: 100;
+    margin-bottom: 5px;
+}
+
+.carousel .carousel-item {
+	width: 250px !important;
+	/*height: auto !important;*/
+}
+
+.carousel {
+	height: 450px !important;
+}
+
+.modal {
+	width: 25%;
+	height:auto;
+}
+
+@media only screen and (max-width: 992px) {
+	.modal {
+	    width: 40%;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.modal {
+	    width: 80%;
+	}
+}
