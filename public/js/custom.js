@@ -16,13 +16,25 @@ function render_most_popular_rocks(rock_list) {
 
 	current_rock_html = '';
 
-	for (var i = 0; i < stopping_value; i++) {
+	for (var i = rock_list.length - 1; i > rock_list.length - stopping_value; i--) {
 
 		// if (i % 3 == 0 && i != 0) {
 		// 	rock_html = '</div><div class="row">';
 		// }
 
 		current_rock = rock_list[i];
+
+		latitude = 0.0;
+		longitude = 0.0;
+
+		if (current_rock['lat'] != null && current_rock['lng'] != null) {
+			latitude = current_rock['lat'];
+			longitude = current_rock['lng'];
+		}
+		else {
+			latitude = current_rock['location']['coordinates'][1];
+			longitude = current_rock['location']['coordinates'][0];
+		}
 
 		current_rock_html += '<a class="carousel-item" href="#' + numbers[i] + '!">';
 		// current_rock_html += '<div class="col s12 m6 l4">';
@@ -57,15 +69,17 @@ function render_most_popular_rocks(rock_list) {
 			                      <tr> \
 			                        <td class="uppercase">Rock No.</td>';
 
-        current_rock_html += '<td>000000000' + current_rock['id'] + '</td>';
+        current_rock_html += '<td>0000' + current_rock['id'] + '</td>';
         current_rock_html += '</tr><tr> \
 		                        <td class="uppercase">Location</td>';
         current_rock_html += '<td>' + 'New York, New York, USA' + '</td>';
         // current_rock['location']
         current_rock_html += '</tr><tr> \
 		                        <td class="uppercase">Coordinates</td>';
-		latitude = String(Math.round(parseFloat(current_rock['lat']) * 100) / 100);
-		longitude = String(Math.round(parseFloat(current_rock['lng']) * 100) / 100);
+
+		latitude = String(Math.round(parseFloat(latitude) * 100) / 100);
+		longitude = String(Math.round(parseFloat(longitude) * 100) / 100);
+
         current_rock_html += '<td>' + latitude + ', ' + longitude + '</td>';
         current_rock_html += '</tr><tr> \
 		                        <td class="uppercase">Discovered</td>';
@@ -102,6 +116,18 @@ function profile_modal(index, rocks) {
 
 	current_rock = rocks[index];
 
+	latitude = 0.0;
+	longitude = 0.0;
+
+	if (current_rock['lat'] != null && current_rock['lng'] != null) {
+		latitude = current_rock['lat'];
+		longitude = current_rock['lng'];
+	}
+	else {
+		latitude = current_rock['location']['coordinates'][1];
+		longitude = current_rock['location']['coordinates'][0];
+	}
+
 	current_rock_html = '';
 
 	current_rock_html += '<div class="card hoverable"> \
@@ -136,15 +162,15 @@ function profile_modal(index, rocks) {
 		                      <tr> \
 		                        <td class="uppercase">Rock No.</td>';
 
-    current_rock_html += '<td>000000000' + current_rock['id'] + '</td>';
+    current_rock_html += '<td>0000' + current_rock['id'] + '</td>';
     current_rock_html += '</tr><tr> \
 	                        <td class="uppercase">Location</td>';
     current_rock_html += '<td>' + 'New York, New York, USA' + '</td>';
     // current_rock['location']
     current_rock_html += '</tr><tr> \
 	                        <td class="uppercase">Coordinates</td>';
-	latitude = String(Math.round(parseFloat(current_rock['lat']) * 100) / 100);
-	longitude = String(Math.round(parseFloat(current_rock['lng']) * 100) / 100);
+	latitude = String(Math.round(parseFloat(latitude) * 100) / 100);
+	longitude = String(Math.round(parseFloat(longitude) * 100) / 100);
     current_rock_html += '<td>' + latitude + ', ' + longitude + '</td>';
     current_rock_html += '</tr><tr> \
 	                        <td class="uppercase">Discovered</td>';
